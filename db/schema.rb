@@ -25,8 +25,6 @@ ActiveRecord::Schema.define(version: 2020_07_21_233236) do
     t.integer "speed"
     t.integer "generation"
     t.boolean "legendary"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
