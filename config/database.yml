@@ -12,9 +12,9 @@
 default: &default
   adapter: mysql2
   pool: 5
-  username: dbmasteruser
-  password: xA!504SfcZ.s2}3k%(,d}].&<<+hP6E8
-  host: ls-2677e34e3207e1023b85d776b63b983ee2400eb3.cmvuey4en0x4.us-east-1.rds.amazonaws.com
+  username: ENV["USERNAME_DB"]
+  password: ENV["PASSWORD"]
+  host: ENV["HOST_DB"]
   port: 3306
 
 development:
