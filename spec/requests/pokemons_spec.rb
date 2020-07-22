@@ -22,7 +22,15 @@ RSpec.describe "Pokemon API", type: :request do
             expect(pokemon.id).to eq(id-1)
         end
 
-        it 'change '
+        it 'change total for Spearow (id:28) from 262 to 5000' do
+            params = {total: 5000}
+            put "/pokemons/28", params: params
+            expect(response.body).to include("Spearow")
+            get "/pokemons/28"
+            pokemon = response.body
+            pokemon_json = JSON.parse(pokemon)
+            expect(pokemon_json["total"]).to eq(5000)
+        end
     
 
 end
