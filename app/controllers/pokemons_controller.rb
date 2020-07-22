@@ -4,7 +4,7 @@ class PokemonsController < ApplicationController
     
     # GET /pokemons
     def index
-        @pokemons = Pokemon.all
+        @pokemons = Pokemon.page(params[:page])
         render json: @pokemons
     end
 
