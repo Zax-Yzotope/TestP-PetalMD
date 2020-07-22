@@ -39,3 +39,14 @@ set :repo_url, "https://github.com/Zax-Yzotope/TestP-PetalMD"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+namespace :deploy do
+    desc 'Run rake yarn:install'
+    task :yarn_install do
+      on roles(:web) do
+        within release_path do
+          execute("cd #{release_path} && yarn install")
+        end
+      end
+    end
+end
