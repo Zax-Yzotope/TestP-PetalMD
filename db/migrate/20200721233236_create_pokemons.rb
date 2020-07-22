@@ -14,7 +14,6 @@ class CreatePokemons < ActiveRecord::Migration[6.0]
       t.integer :generation
       t.boolean :legendary
 
-      t.timestamps
     end
   end
 end
