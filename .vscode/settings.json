@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9a83b417-c37f-46cb-9b19-f4a245c92ab3/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/imarchandtestpratique",
+    "appService.deploySubpath": "."
+}
